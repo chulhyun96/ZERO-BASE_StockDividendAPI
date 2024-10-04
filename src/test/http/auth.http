@@ -1,0 +1,19 @@
+### Post signup
+POST localhost:8080/signup
+Content-Type: application/json
+
+{
+  "username": "master",
+  "password": "grace123!@#",
+  "roles": ["ROLE_WRITE", "ROLE_READ"]
+}
+
+### Post signin
+POST localhost:8080/signin
+Content-Type: application/json
+
+{
+  "username": "master",
+  "password": "grace123!@#"
+}
+

@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: cheolhyeon-financial
+  datasource:
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    defer-datasource-initialization: true  # sql 스크립트에 대한 설청
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+    properties:
+      hibernate:
+        show_sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  jwt:
+    secret: QlEJIVitDWLhEWCc/khwgutWYsO4/fcdTXWPKWNFFy2opsxXnCbIT/uMDwCn092GxslgtlkOB7uk1ekgE/d0xw==
+
+scheduler:
+  scrap:
+    yahoo: "0 5 * * * *"
+
+logging:
+  config: classpath:logback-spring.xml
+
+

@@ -1,0 +1,34 @@
+### Post addCompany
+POST localhost:8080/company
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXN0ZXIiLCJyb2xlcyI6WyJST0xFX1dSSVRFIl0sImlhdCI6MTcyODAzMjA5MSwiZXhwIjoxNzI4MDUwMDkxfQ.FWRzOVVmR1I1AEs2ziEfAGXCYq8gHgM0THShht_xtz9CGLW5al_qXeCBiw7c11BruuDrgiZb_fSek6u5GTZLeQ
+Accept: application/json
+Content-Type: application/json
+
+{
+  "ticker": "MMM"
+}
+### O, MMM, COKE, IBM, INTC, AAPL, QQQ, IQ, IN, III, IIIV
+
+### Get searchCompany
+GET localhost:8080/company?ticker=MMM
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXN0ZXIiLCJyb2xlcyI6WyJST0xFX1dSSVRFIl0sImlhdCI6MTcyODAzMjA5MSwiZXhwIjoxNzI4MDUwMDkxfQ.FWRzOVVmR1I1AEs2ziEfAGXCYq8gHgM0THShht_xtz9CGLW5al_qXeCBiw7c11BruuDrgiZb_fSek6u5GTZLeQ
+content-Type: application/json
+
+
+### Get searchAllCompany
+GET localhost:8080/companies
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXN0ZXIiLCJyb2xlcyI6WyJST0xFX1dSSVRFIl0sImlhdCI6MTcyODAzMjA5MSwiZXhwIjoxNzI4MDUwMDkxfQ.FWRzOVVmR1I1AEs2ziEfAGXCYq8gHgM0THShht_xtz9CGLW5al_qXeCBiw7c11BruuDrgiZb_fSek6u5GTZLeQ
+Accept: application/json
+content-Type: application/json
+
+### Get autocomplete
+GET localhost:8080/company/autocomplete?keyword=i&size=
+
+
+### Post addCompany
+@ticker=MMM
+DELETE localhost:8080/company/{{ticker}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXN0ZXIiLCJyb2xlcyI6WyJST0xFX1dSSVRFIl0sImlhdCI6MTcyODAzMjA5MSwiZXhwIjoxNzI4MDUwMDkxfQ.FWRzOVVmR1I1AEs2ziEfAGXCYq8gHgM0THShht_xtz9CGLW5al_qXeCBiw7c11BruuDrgiZb_fSek6u5GTZLeQ
+Accept: application/json
+Content-Type: application/json
+

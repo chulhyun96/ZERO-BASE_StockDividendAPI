@@ -1,0 +1,6 @@
+### Get serchFinance
+@companyName = 3M Company
+GET localhost:8080/finance/dividend/{{companyName}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXN0ZXIiLCJyb2xlcyI6WyJST0xFX1dSSVRFIl0sImlhdCI6MTcyODAzMjA5MSwiZXhwIjoxNzI4MDUwMDkxfQ.FWRzOVVmR1I1AEs2ziEfAGXCYq8gHgM0THShht_xtz9CGLW5al_qXeCBiw7c11BruuDrgiZb_fSek6u5GTZLeQ
+
+
